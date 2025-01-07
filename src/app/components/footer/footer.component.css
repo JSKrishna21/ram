@@ -1,0 +1,35 @@
+.footer {
+  border-top: 1px solid #ddd;
+}
+
+.footer address {
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.footer input {
+  border-width: 0 0 1px 0;
+}
+
+.footer button {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.footer button:hover {
+  background-color: #758278;
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #007bff;
+}
+
+.footer i {
+  font-size: 1.3em;
+  transition: color 0.3s ease;
+}
+
+.footer i:hover {
+  color: #758278;
+}

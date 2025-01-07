@@ -1,0 +1,10 @@
+<div class="products-container">
+  <h2>Our Products</h2>
+  <div class="row mx-3 mx-xl-4 px-lg-2">
+    @for (product of products$ | async; track product.id) {
+      <div class=" col-lg-4 col-xl-3">
+        <app-product-card [product]="product"></app-product-card>
+      </div>
+    }
+  </div>
+</div>

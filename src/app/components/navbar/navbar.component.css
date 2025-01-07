@@ -1,0 +1,254 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    height: 60px;
+}
+
+.navbar.scrolled {
+    padding: 0.5rem 2rem;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.dropdown {
+    li {
+        a {
+            color: #758278;
+        }
+    }
+}
+
+.dropdown {
+    li {
+        a:hover {
+            background-color:#758278;
+            color: white;
+        }
+    }
+}
+
+.navbar-brand a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 0.3rem;
+    transition: color 0.3s ease;
+    font-size: 16px;
+}
+
+.logo {
+
+}
+
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+    color: var(--bs-btn-active-color);
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none
+}
+
+.form-control:focus {
+    /*box-shadow: none;*/
+    /*border-color: #0d6efd;*/
+}
+
+.search {
+    background-color: #758278;
+    color: white;
+}
+
+.bi-person {
+    font-size: 25px;
+}
+
+.bi-cart2 {
+    font-size: 25px;
+}
+
+.bi-person-circle {
+    font-size: 25px;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.nav-links a.active {
+    color: #007bff;
+    position: relative;
+}
+
+.cancle-icon {
+    right: 30px;
+}
+
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+}
+
+.dropdown-menu {
+    background-color: #fff; /* Background color */
+    border: 1px solid #ddd; /* Border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    border-radius: 0px;
+}
+
+.dropdown-item {
+    color: #333; /* Text color */
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: 0px;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    display: none;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa; /* Hover effect */
+    color: #007bff; /* Highlight text */
+}
+
+.custom-link {
+    position: relative; /* For positioning the pseudo-element */
+    text-decoration: none; /* Remove default underline */
+    color: #007bff; /* Smooth transition for color and scaling */
+}
+
+custom-link::after {
+    content: ''; /* Creates a pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Position underline just below text */
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s ease; /* Smooth animation */
+}
+
+custom-link:hover::after {
+    width: 100%; /* Expand underline on hover */
+}
+
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #758278;
+    outline: 0;
+    box-shadow: none;
+}
+
+.custom-link:hover {
+    border-bottom: 2px solid #007bff;
+    color: #0056b3; /* Change text color on hover */
+}
+
+.logo {
+    max-height: 40px;
+}
+/*.pro:hover {*/
+/*   background-color: white;*/
+/*    border: none;*/
+/*}*/
+.search-bar {
+    flex-grow: 1;
+}
+
+.input-group input[type="search"] {
+    width: 100%;
+}
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: unset;
+    align-items: stretch;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+
+    }
+
+    .navbar.scrolled {
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    /*.navbar{*/
+    /*  padding: 0 10px;*/
+    /*}*/
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+        background: white;
+        padding: 0 25px;
+    }
+
+    .custom-link:hover {
+        border-bottom: 2px solid #007bff;
+        color: #0056b3;
+        transform: none;
+    }
+    .search-bar {
+        display: none;
+    }
+    .w-xs-100{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        max-height: 40px;
+    }
+    .search-bar {
+        width: 100%;
+    }
+}
+
+.custom-link {
+    font-size: 1rem;
+}
+
+@media (min-width: 275px) and (max-width: 575px) {
+    .nav {
+        padding: 0 10px;
+    }
+}
+
+

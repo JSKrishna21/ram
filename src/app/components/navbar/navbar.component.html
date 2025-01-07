@@ -1,0 +1,154 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-lg-5  py-0">
+    <div class="px-lg-0 px-md-5 px-sm-2 nav d-sm-flex d-md-flex justify-content-between justify-content-md-between justify-content-lg-start w-xs-100 ">
+        <a href="#" class="navbar-brand">
+            <img src="./assets/images/logo.png" alt="Logo"  class="logo">
+        </a>
+        <button class="float-end navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarScroll">
+            <ul class="navbar-nav  navbar-nav-scroll navbar-brand px-0 g gap-2">
+                <li class="nav-item dropdown">
+                    <a routerLink="/" routerLinkActive="active" aria-current="page" class="nav-link dropdown-toggle custom-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" (click)="toggleDropdown('home')" data-bs-target="#navbarScroll">Home   <i class="bi"  [ngClass]="dropdownState['home'] ? 'bi-chevron-up' : 'bi-chevron-down'" style="font-size: 10px"></i></a>
+                    <ul class="dropdown-menu pb-4" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Home 1</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Home 2</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Home 3</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Home 4</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Home 5</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a routerLink="/" routerLinkActive="active" aria-current="page" class="nav-link dropdown-toggle custom-link" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false" (click)="toggleDropdown('shop')" data-bs-target="#navbarScroll">Shop <i class="bi" [ngClass]="dropdownState['shop'] ? 'bi-chevron-up' : 'bi-chevron-down'" style="font-size: 10px"></i></a>
+                    <ul class="dropdown-menu pb-4" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a routerLink="/home1" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Cameras</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Cables</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Access Control</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Motion Detectors</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Sensors</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Alarm System</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Accessories</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a routerLink="/" routerLinkActive="active" aria-current="page" class="nav-link dropdown-toggle custom-link" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false" (click)="toggleDropdown('solutions')" data-bs-target="#navbarScroll">Solutions <i class="bi" [ngClass]="dropdownState['solutions'] ? 'bi-chevron-up' : 'bi-chevron-down'" style="font-size: 10px"></i></a>
+                    <ul class="dropdown-menu pb-4" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Solutions 1</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Solutions 2</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Solutions 3</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Solutions 4</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Solutions 5</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a routerLink="/" routerLinkActive="active" aria-current="page" class="nav-link dropdown-toggle custom-link" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false" (click)="toggleDropdown('blog')" data-bs-target="#navbarScroll">Blog <i class="bi" [ngClass]="dropdownState['blog'] ? 'bi-chevron-up' : 'bi-chevron-down'" style="font-size: 10px"></i></a>
+                    <ul class="dropdown-menu pb-4" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Blog 1</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Blog 2</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Blog 3</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Blog 4</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Blog 5</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a routerLink="/" routerLinkActive="active" aria-current="page" class="nav-link dropdown-toggle custom-link" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false" (click)="toggleDropdown('page')" data-bs-target="#navbarScroll">Page <i class="bi" [ngClass]="dropdownState['page'] ? 'bi-chevron-up' : 'bi-chevron-down'" style="font-size: 10px"></i></a>
+                    <ul class="dropdown-menu pb-4" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Page 1</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Page 2</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Page 3</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Page 4</a>
+                        </li>
+                        <li>
+                            <a routerLink="#" routerLinkActive="active" class="dropdown-item ps-3" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Page 5</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/" routerLinkActive="active" aria-current="page" class="nav-link active custom-link" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Contact</a>
+                </li>
+                <!--                <li class="nav-item">-->
+                <!--                    <a  routerLinkActive="active" aria-current="page" class="nav-link active">Login</a>-->
+                <!--                </li>-->
+            </ul>
+
+
+            <form class="d-flex align-items-center w-50">
+                <div class="search-bar w-50 me-3 d-lg-block d-md-none d-sm-none">
+                    <div class="input-group">
+                        <input type="search" class="form-control w-100" placeholder="Search..." aria-label="Search">
+                        <button class="btn search" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
+                    <i class="bi bi-person me-2" routerLink="/login" *ngIf="!isUserLoggedIn"></i>
+                    <div class="dropdown" *ngIf="isUserLoggedIn">
+                            <i class="bi bi-person dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" (click)="logout()">Log Out</a></li>
+                        </ul>
+                    </div>
+                    <i class="bi bi-cart2 ms-3" *ngIf="isUserLoggedIn"></i>
+                </div>
+            </form>
+        </div>
+</nav>
+
+
+
