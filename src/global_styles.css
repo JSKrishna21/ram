@@ -1,0 +1,142 @@
+/* Reset and base styles */
+
+@font-face {
+  font-family: 'Greatest Richmond';
+  src: url("/assets/fonts/greatest_richmond/Greatest_Richmond.woff");
+  src: url(/assets/fonts/greatest_richmond/Greatest_Richmond.woff2) format("woff2"),url(/assets/fonts/greatest_richmond/Greatest_Richmond.woff) format("woff"),url(/assets/fonts/greatest_richmond/Greatest_Richmond.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'Mazzard Soft H';
+  src: url(/assets/fonts/mazzard-soft-regular/MazzardH-Regular/Web_Fonts/eb5b5ee332420add9a40ee988cb6ac37.eot);
+  src: url("/assets/fonts/mazzard-soft-regular/MazzardH-Regular/Web_Fonts/eb5b5ee332420add9a40ee988cb6ac37.eot?#iefix") format("embedded-opentype"),url(/assets/fonts/mazzard-soft-regular/MazzardH-Regular/Web_Fonts/eb5b5ee332420add9a40ee988cb6ac37.woff2) format("woff2"),url(/assets/fonts/mazzard-soft-regular/MazzardH-Regular/Web_Fonts/eb5b5ee332420add9a40ee988cb6ac37.woff) format("woff"),url(/assets/fonts/mazzard-soft-regular/MazzardH-Regular/Web_Fonts/eb5b5ee332420add9a40ee988cb6ac37.ttf) format("truetype"),url("/assets/fonts/mazzard-soft-regular/MazzardH-Regular/Web_Fonts/eb5b5ee332420add9a40ee988cb6ac37.svg#MazzardSoftH-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'Mazzard Soft H Bold';
+  src: url(/assets/fonts/mazzard/MazzardH-Bold.eot);
+  src: url("/assets/fonts/mazzard/MazzardH-Bold.eot?#iefix") format("embedded-opentype"),url(/assets/fonts/mazzard/MazzardH-Bold.woff2) format("woff2"),url(/assets/fonts/mazzard/MazzardH-Bold.woff) format("woff"),url(/assets/fonts/mazzard/MazzardH-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Light';
+  src: url(/assets/fonts/HelveticaNeue-Light/Helvetica_Neue_Light/Web_Fonts/0e6de1ec911a2e267ff136bbdd384a44.eot);
+  src: url("/assets/fonts/HelveticaNeue-Light/Helvetica_Neue_Light/Web_Fonts/0e6de1ec911a2e267ff136bbdd384a44.eot?#iefix") format("embedded-opentype"),url(/assets/fonts/HelveticaNeue-Light/Helvetica_Neue_Light/Web_Fonts/0e6de1ec911a2e267ff136bbdd384a44.woff2) format("woff2"),url(/assets/fonts/HelveticaNeue-Light/Helvetica_Neue_Light/Web_Fonts/0e6de1ec911a2e267ff136bbdd384a44.woff) format("woff"),url(/assets/fonts/HelveticaNeue-Light/Helvetica_Neue_Light/Web_Fonts/0e6de1ec911a2e267ff136bbdd384a44.ttf) format("truetype"),url("/assets/fonts/HelveticaNeue-Light/Helvetica_Neue_Light/Web_Fonts/0e6de1ec911a2e267ff136bbdd384a44.svg#MazzardSoftH-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url(/assets/fonts/Helvetica_Neue/Helvetica_Neue/Web_Fonts/0103c17d29a2cf6a1dccb40abd91aad8.eot);
+  src: url("/assets/fonts/Helvetica_Neue/Helvetica_Neue/Web_Fonts/0103c17d29a2cf6a1dccb40abd91aad8.eot?#iefix") format("embedded-opentype"),url(/assets/fonts/Helvetica_Neue/Helvetica_Neue/Web_Fonts/0103c17d29a2cf6a1dccb40abd91aad8.woff2) format("woff2"),url(/assets/fonts/Helvetica_Neue/Helvetica_Neue/Web_Fonts/0103c17d29a2cf6a1dccb40abd91aad8.woff) format("woff"),url(/assets/fonts/Helvetica_Neue/Helvetica_Neue/Web_Fonts/0103c17d29a2cf6a1dccb40abd91aad8.ttf) format("truetype"),url("/assets/fonts/Helvetica_Neue/Helvetica_Neue/Web_Fonts/0103c17d29a2cf6a1dccb40abd91aad8.svg#MazzardSoftH-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url(/assets/fonts/Helvetica/Helvetica/Web_Fonts/0ea33830686c6ee0453b626d9aac208e.eot);
+  src: url("/assets/fonts/Helvetica/Helvetica/Web_Fonts/0ea33830686c6ee0453b626d9aac208e.eot?#iefix") format("embedded-opentype"),url(/assets/fonts/Helvetica/Helvetica/Web_Fonts/0ea33830686c6ee0453b626d9aac208e.woff2) format("woff2"),url(/assets/fonts/Helvetica/Helvetica/Web_Fonts/0ea33830686c6ee0453b626d9aac208e.woff) format("woff"),url(/assets/fonts/Helvetica/Helvetica/Web_Fonts/0ea33830686c6ee0453b626d9aac208e.ttf) format("truetype"),url("/assets/fonts/Helvetica/Helvetica/Web_Fonts/0ea33830686c6ee0453b626d9aac208e.svg#MazzardSoftH-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'Lucida Grande';
+  src: url(/assets/fonts/Lucida_Grande/Lucida_Grande/Web_Fonts/0bbba3e6da511a469bc943bdf02310e7.eot);
+  src: url("/assets/fonts/Lucida_Grande/Lucida_Grande/Web_Fonts/0bbba3e6da511a469bc943bdf02310e7.eot?#iefix") format("embedded-opentype"),url(/assets/fonts/Lucida_Grande/Lucida_Grande/Web_Fonts/0bbba3e6da511a469bc943bdf02310e7.woff2) format("woff2"),url(/assets/fonts/Lucida_Grande/Lucida_Grande/Web_Fonts/0bbba3e6da511a469bc943bdf02310e7.woff) format("woff"),url(/assets/fonts/Lucida_Grande/Lucida_Grande/Web_Fonts/0bbba3e6da511a469bc943bdf02310e7.ttf) format("truetype"),url("/assets/fonts/Lucida_Grande/Lucida_Grande/Web_Fonts/0bbba3e6da511a469bc943bdf02310e7.svg#MazzardSoftH-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;*/
+  font-family: "Greatest Richmond","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  line-height: 1.6;
+  color: #333;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+button,input,textarea {
+  color: #555;
+  font-family: "Mazzard Soft H","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  line-height: 1.8;
+  text-rendering: optimizeLegibility;
+}
+
+select {
+  color: initial;
+  font-family: "Mazzard Soft H","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  max-width: 100%
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Mazzard Soft H Bold","Mazzard Soft H","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  clear: both;
+}
+
+p{
+  font-family: "Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+}
+
+/* Utility classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+}
+
+/* Form styles */
+input, button {
+  font: inherit;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Accessibility */
+:focus {
+  /*outline: 2px solid #007bff;*/
+  /*outline-offset: 2px;*/
+}
+.container-length{
+  padding: 0 48px;
+}
